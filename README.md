@@ -24,14 +24,14 @@ The goals / steps of this project are the following:
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
 
-###Writeup / README
+### Writeup / README
 
-####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  [Here](https://github.com/udacity/CarND-Advanced-Lane-Lines/blob/master/writeup_template.md) is a template writeup for this project you can use as a guide and a starting point.  
+#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  [Here](https://github.com/udacity/CarND-Advanced-Lane-Lines/blob/master/writeup_template.md) is a template writeup for this project you can use as a guide and a starting point.  
 
 You're reading it!
-###Camera Calibration
+### Camera Calibration
 
-####1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
+#### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
 The code for this step is named Step1 contained in the IPython notebook located in `./advanced_lane_lines.ipynb`.
 
@@ -41,18 +41,18 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 ![alt text][calibration]
 
-###Pipeline (single images)
+### Pipeline (single images)
 
-####1. Provide an example of a distortion-corrected image.
+#### 1. Provide an example of a distortion-corrected image.
 To demonstrate this step, I show the original & the undistorted image:
 ![alt text][undistorted]
 
-####2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
+#### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 I used a combination of color and gradient thresholds to generate a binary image (Step3 of the code).  Here's an example of my output for this step.
 
 ![alt text](\[transforms]
 
-####3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
+#### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
 The code for my perspective transform is in Step4 of the code.  I chose the hardcode the source and destination points in the following manner:
 
@@ -82,17 +82,17 @@ I verified that my perspective transform was working as expected by drawing the 
 
 ![alt text][perspective]
 
-####4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
+#### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
 Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this(in Step5):
 
 ![alt text][colorfit]
 
-####5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
+#### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
 I did this in Step6 in my code.
 
-####6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
+#### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
 I implemented this step in Step7 in my code. Here is an example of my result on a test image:
 
@@ -100,17 +100,17 @@ I implemented this step in Step7 in my code. Here is an example of my result on 
 
 ---
 
-###Pipeline (video)
+### Pipeline (video)
 
-####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
+#### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
 Here's my [video result][video1]
 
 ---
 
-###Discussion
+### Discussion
 
-####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+#### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
