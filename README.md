@@ -50,7 +50,7 @@ To demonstrate this step, I show the original & the undistorted image:
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 I used a combination of color and gradient thresholds to generate a binary image (Step3 of the code).  Here's an example of my output for this step.
 
-![alt text](\[transforms]
+![alt text][transforms]
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -104,7 +104,7 @@ I implemented this step in Step7 in my code. Here is an example of my result on 
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's my [video result][video1]
+Here's my [video result][video1].
 
 ---
 
